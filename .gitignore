@@ -1,0 +1,17 @@
+node_modules/
+dist/
+
+# secrets & tokens — never commit these
+.env
+credentials.json
+token.json
+
+# runtime state
+data/*.json
+
+# misc
+*.log
+.DS_Store
+
+# IDE
+.vs/

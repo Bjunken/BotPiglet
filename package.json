@@ -1,0 +1,25 @@
+{
+  "name": "botpiglet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Custom Discord bot for personal automations (Google Classroom alerts, GitHub push notifications, etc.)",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "deploy-commands": "tsx src/deploy-commands.ts",
+    "auth:google": "tsx src/classroom/authorize.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2"
+  }
+}
